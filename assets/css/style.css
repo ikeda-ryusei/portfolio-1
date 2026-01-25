@@ -142,7 +142,7 @@
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -162,16 +162,16 @@ body {
 /* ページ単体の基礎 */
 
 .work-page section {
-    padding: 80px 0;
-    margin-bottom: 120px;
+    padding: 40px 0;
+    /* margin-bottom: 20px; */
 }
 
 .work-page h2 {
-    margin-bottom: 24px;
+    margin-bottom: 20px;
 }
 
 .work-page ul li {
-    margin-bottom: 8px;
+    padding: 8px 0;
 }
 
 .work-page img {
@@ -180,9 +180,6 @@ body {
 }
 
 
-.work-summary {
-    
-}
 
 /* 見出し＋本文 横並び */
 .work-page [class$="__row"] {
@@ -193,11 +190,23 @@ body {
 
 /* 見出しカラム */
 .work-page [class$="__row"] > h2 {
-  flex: 0 0 220px;
+  flex: 0 0 260px;
 }
 
 /* 本文カラム（ul / p 両対応） */
 .work-page [class$="__row"] > ul,
 .work-page [class$="__row"] > p {
   flex: 1;
+}
+/* 強調したい3ブロック */
+.work-purpose,
+.work-point,
+.work-challenge {
+  background: #f5f5f5;
+}
+
+/* 強調の区切り */
+.work-summary,
+.work-challenge {
+  margin-bottom: 80px;
 }

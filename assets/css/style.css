@@ -1,6 +1,5 @@
 /* ヘッダー全体 */
 .header {
-    background-color: #fff;
     border-bottom: 1px solid #ddd;
 }
 /* ヘッダーの横並びの軸 */
@@ -9,9 +8,6 @@
     justify-content: space-between;
     align-items: center;
 }
-/* .logo {
-
-} */
 
 /* ナビ */
 .nav-list {
@@ -26,47 +22,7 @@
     text-decoration: none;
     color: #333;
     font-size: 14px;
-}
-
-
-/* 自己紹介 */
-
-.about {
-    margin: 80px 0;
-    padding: 40px 0;
-    background-color: #e2e1e1;
-}
-.about h2 {
-    text-align: center;
-    margin-bottom: 20px;
-}
-.about p {
-    text-align: center;
-    line-height: 1.8;
-}
-
-/* 今できること */
-.service {
-    text-align: center;
-}
-           
-.service-list {
-    display: flex;
-    gap: 40px;
-}
-.service-item {
-    flex: 1;
-    min-width: 280px;
-    padding: 40px 32px;
-    border: 1px solid #b3aeae;
-    text-align: center;
-}
-.service-item:hover {
-    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-}                   
-.service-item h3 {
-    margin-bottom: 20px;
-}                   
+}         
 
 
 /* サービス紹介 */
@@ -99,10 +55,47 @@
   margin-bottom: 20px;
 }  
 
+/* 今できること */
+.service {
+    text-align: center;
+}
+           
+.service-list {
+    display: flex;
+    gap: 40px;
+}
+.service-item {
+    flex: 1;
+    min-width: 280px;
+    padding: 40px 32px;
+    border: 1px solid #b3aeae;
+    text-align: center;
+}
+.service-item:hover {
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}                   
+.service-item h3 {
+    margin-bottom: 20px;
+}    
+
+/* 自己紹介 */
+
+.about {
+    margin: 80px 0;
+    padding: 40px 0;
+}
+.about h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.about p {
+    text-align: center;
+    line-height: 1.8;
+}
+
 /* お問い合わせ　contact */
 
 .contact {
-    background: #f5f5f5;
     padding: 80px 0;
 }
 .contact-list {
@@ -113,15 +106,26 @@
 .contact-item {
     max-width: 300px;
 }
-.contact ul {
-    padding-left: 20px;
-    margin: 0;
-}
 .contact h2 {
     margin-bottom: 30px;
+    text-align: center;
 }
-.contact li {
-    padding: 5px;
+
+/* career */
+.career {
+
+}
+
+.career h2 {
+    margin-bottom: 30px;
+    text-align: center;
+}
+.career__list {
+
+}
+.career__list li {
+    
+    
 }
 
 /* footer */
@@ -148,6 +152,7 @@
 }
 section {
     padding: 60px 0;
+    background: #fff;
 }
 
 /* ページ全体の基礎 */
@@ -157,6 +162,7 @@ body {
     font-family: sans-serif;
     line-height: 1.8;
     color: #333;
+    background: #b91f1f;
 }
 
 /* ページ単体の基礎 */
@@ -168,6 +174,8 @@ body {
 
 .work-page h2 {
     margin-bottom: 20px;
+    font-size: 22px;
+    font-weight: 580;
 }
 
 .work-page ul li {
@@ -198,11 +206,22 @@ body {
 .work-page [class$="__row"] > p {
   flex: 1;
 }
+
+/* 強調したい3ブロック */
+.work-purpose h2,
+.work-point h2,
+.work-challenge h2 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
 /* 強調したい3ブロック */
 .work-purpose,
 .work-point,
 .work-challenge {
   background: #f5f5f5;
+  font-weight: 550;
+  padding-left: 24px;
 }
 
 /* 強調の区切り */
